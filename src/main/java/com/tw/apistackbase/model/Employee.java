@@ -9,6 +9,10 @@ public class Employee {
     private int age;
     private String gender;
     static List<Employee> employees;
+
+    public Employee() {
+    }
+
     public Employee(int id, String name, int age, String gender) {
         this.id = id;
         this.name = name;
