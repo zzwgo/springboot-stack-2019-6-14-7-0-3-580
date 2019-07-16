@@ -32,6 +32,10 @@ public class EmployeesController {
         return Employee.changeTestEmployees(employee);
     }
 
-
+    @GetMapping("/{id}")
+    public Employee searchEmployees(@PathVariable int id){
+        Employee.createTestEmployees();
+        return Employee.searchTestEmployees(id);
+    }
 
 }

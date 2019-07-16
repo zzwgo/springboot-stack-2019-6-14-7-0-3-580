@@ -46,7 +46,14 @@ public class Employee {
         }
         return employees;
     }
-
+    public static Employee searchTestEmployees(int id) {
+        for(Employee nowEmployee:employees){
+            if(nowEmployee.getId()==id){
+                return nowEmployee;
+            }
+        }
+        return null;
+    }
 
     public int getId() {
         return id;
