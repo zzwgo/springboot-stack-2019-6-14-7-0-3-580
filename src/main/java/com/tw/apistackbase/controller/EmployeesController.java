@@ -19,5 +19,10 @@ public class EmployeesController {
         return Employee.AddTestEmployees(employee);
     }
 
-
+    @DeleteMapping
+    @RequestMapping("/{id}")
+    public List<Employee> deleteEmployees(@PathVariable int id){
+        Employee.createTestEmployees();
+        return Employee.DeleteTestEmployees(1);
+    }
 }
