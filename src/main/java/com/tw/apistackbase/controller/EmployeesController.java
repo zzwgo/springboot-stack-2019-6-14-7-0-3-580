@@ -15,7 +15,9 @@ public class EmployeesController {
     }
 
     @PostMapping
-    public void addEmployees(@RequestBody Employee employee){
-        System.out.println(employee.getName());
+    public List<Employee> addEmployees(@RequestBody Employee employee){
+        return Employee.AddTestEmployees(employee);
     }
+
+
 }

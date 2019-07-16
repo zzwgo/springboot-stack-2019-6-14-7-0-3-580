@@ -1,5 +1,6 @@
 package com.tw.apistackbase.model;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Employee {
@@ -9,7 +10,14 @@ public class Employee {
     private String gender;
 
     public static List<Employee> createTestEmployees() {
+        List<Employee> employees=new ArrayList<>();
         return null;
+    }
+
+    public static List<Employee> AddTestEmployees(Employee employee) {
+        List<Employee> employees=new ArrayList<>();
+        employees.add(employee);
+        return employees;
     }
 
     public int getId() {
